@@ -1,0 +1,30 @@
+add $s1, $s5, $s3
+sub $t1, $t2, $s5
+addi $s1, $s6, 100
+lw $s5, 100($s2)
+sw $t2, 20($s1)
+lh $s1, 28($s4)
+lhu $s1, 4($s3)
+sh $s2, 10($s4)
+lb $s1, 20($s2)
+lbu $s1, 20($s2)
+sb $t1, 0($s1)
+ll $s2, 20($s4)
+sc $s3, 32($s1)
+lui $t4, 16
+and $s1, $s4, $s5
+or $t0, $t1, $t2
+nor $t0, $t1, $t4
+andi $t0, $t1, 30
+ori $s4, $s5, 10
+sll $t2, $t3, 10
+srl $t0, $t6, 15
+beq $t0, $s1, 25
+bne $t0, $t2, 20
+slt $t0, $s0, $s1
+sltu $s1, $s3, $s7
+slti $s1, $s4, 100
+sltiu $t1, $t2, 40
+j 500
+jal -4128
+jr $ra
